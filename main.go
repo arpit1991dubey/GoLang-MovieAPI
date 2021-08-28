@@ -4,12 +4,13 @@ import (
 	"fmt"
 	"encoding/json" 		 //To encode and decode json
 	"log"					 //To log Errors
-	"github.com/gorilla/mux" //The name mux stands for "HTTP request multiplexer". Like the standard http.ServeMux, mux.Router matches incoming requests against a list of registered routes
+	"github.com/gorilla/mux" //The name mux stands for "HTTP request multiplexer".
+				//Like the standard http.ServeMux, mux.Router matches incoming requests against a list of registered routes 
+				//and calls a handler for the route that matches the URL or other conditions
 	"math/rand"              // To generate random values
 	"net/http"               //To create an http server
 	"strconv"                //To convert string into integrs or vice verso
-							 // and calls a handler for the route that matches the URL or other conditions
-)
+							
 
 type Movie struct {
 	ID       string    `json: "id"`
